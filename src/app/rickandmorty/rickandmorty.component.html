@@ -1,1 +1,14 @@
-<p>rickandmorty works!</p>
+<div class="wrapper">
+  <div class="header">
+    <h1>Characters:</h1>
+  </div>
+  <div class="data">
+    <div *ngFor="let character of characters$" class="eachCharacter">
+          <img src="{{character.image}}" alt="{{character.id}}"/>
+          <label>
+            name:{{character.name}}<br/>
+            status: {{character.status}}
+          </label>
+    </div>
+  </div>
+</div>
